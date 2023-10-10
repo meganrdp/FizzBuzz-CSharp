@@ -11,6 +11,12 @@ internal class Program
             {
                 Console.WriteLine("fizz");
             }
+
+            else if (i % 5 == 0)
+            {
+                Console.WriteLine("buzz");
+            }
+            
             else
             {
                 Console.WriteLine(i);
