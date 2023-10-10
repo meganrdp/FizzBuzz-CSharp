@@ -2,30 +2,43 @@
 
 internal class Program
 {
+    static bool IsDivisibleBy(int numerator, int denomoinator)
+    {
+        return numerator % denomoinator == 0;
+    }
     static void Fizzbuzz()
     {
         for (int i = 0; i <= 100; i++)
         {
+            string result = "";
 
-            if (i % 3 == 0 && i % 5 == 0)
+            if (IsDivisibleBy(i,3))
             {
-                Console.WriteLine("FizzBuzz");
-            }
-            
-            else if (i % 3 == 0) 
-            {
-                Console.WriteLine("fizz");
+                result += "Fizz";
             }
 
-            else if (i % 5 == 0)
+            if (IsDivisibleBy(i,5))
             {
-                Console.WriteLine("buzz");
+                result += "Buzz";
+            }
+
+            if (IsDivisibleBy(i,7))
+            {
+                result += "Bang";
+            }
+
+            if (IsDivisibleBy(i,11))
+            {
+                result += "Bong";
             }
             
-            else
+            if (result == "")
             {
-                Console.WriteLine(i);
+                result = i.ToString();
             }
+
+            Console.WriteLine(result);
+           
         }
         Console.ReadLine();
     }
