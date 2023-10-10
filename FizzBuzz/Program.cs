@@ -4,7 +4,11 @@ internal class Program
 {
     static void Fizzbuzz()
     {
-        // Your code goes here
+        for (int i = 0; i <= 100; i++)
+        {
+            ifConsole.Write(i);
+        }
+        Console.ReadLine();
     }
     
     static void Main(string[] args)
