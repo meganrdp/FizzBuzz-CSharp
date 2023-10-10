@@ -6,7 +6,7 @@ internal class Program
     {
         for (int i = 0; i <= 100; i++)
         {
-            ifConsole.Write(i);
+            Console.Write(i);
         }
         Console.ReadLine();
     }
