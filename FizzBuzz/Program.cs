@@ -6,7 +6,14 @@ internal class Program
     {
         for (int i = 0; i <= 100; i++)
         {
-            ifConsole.Write(i);
+            if (i % 3 == 0) 
+            {
+                Console.WriteLine("fizz");
+            }
+            else
+            {
+                Console.WriteLine(i);
+            }
         }
         Console.ReadLine();
     }
